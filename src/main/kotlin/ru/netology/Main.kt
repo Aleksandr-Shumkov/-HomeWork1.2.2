@@ -15,7 +15,7 @@ fun getTextEnding(likes:Int): String {
     val remainder100 = ((likes - remainder10) / 10) % 10;
 
     if (remainder100 != 1) {
-        return when (likes % 10) {
+        return when (remainder10) {
             1 -> "человеку"
             else -> "людям"
         }
